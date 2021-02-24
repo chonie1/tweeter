@@ -21,6 +21,7 @@
   border: none;
   font-family: 'Bungee', cursive, sans-serif;
   color: white;
+  outline: none;
 }
 
 .new-tweet output {

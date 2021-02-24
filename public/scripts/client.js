@@ -55,7 +55,6 @@ const createTweetElement = function(tweetData) {
 // calls createTweetElement for each tweet
 // takes return value and appends it to the tweets container
 const renderTweets = function(tweets) {
-
   for (const tweet of Object.values(tweets)) {
     $('#tweets-container').prepend(createTweetElement(tweet));
   }
@@ -77,6 +76,17 @@ const loadTweets = function() {
     });
 };
 
+// Returns error message
+const createError = function(msg){
+  const errorHTML = 
+    `<span class="fas fa-exclamation-triangle"></span>
+    <span>${msg}</span>
+    <span class="fas fa-exclamation-triangle"></span>`;
+
+  return errorHTML;
+}
+
+
 $(document).ready(function() {
   
   // hiding error message on load
@@ -94,13 +104,13 @@ $(document).ready(function() {
     const counter = Number(counterElem.val());
    
     if (counter < 0) {
-      $('#error').html('<span class="fas fa-exclamation-triangle"></span><span>Chill, this ain\'t yo diary</span><span class="fas fa-exclamation-triangle"></span>');
+      $('#error').html(createError('Chilllllll out. Your tweet is too long'));
       $('#error').slideDown();
       return;
     }
 
     if (counter === 140) {
-      $('#error').html('<span class="fas fa-exclamation-triangle"></span><span>Did you even try?</span><span class="fas fa-exclamation-triangle"></span>');
+      $('#error').html(createError('Did you even try? Type in at least one character'));
       $('#error').slideDown();
       return;
     }
@@ -118,7 +128,7 @@ $(document).ready(function() {
         loadTweets();
       })
       .fail(function(msg) {
-        $('#error').html('<span class="fas fa-exclamation-triangle"></span><span>It\'s not you it\'s us. Try submitting again</span><span class="fas fa-exclamation-triangle"></span>');
+        $('#error').html(createError("It's not you it's us. Try restarting the page"));
         $('#error').slideDown();
       });
   });
