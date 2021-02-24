@@ -1,0 +1,18 @@
+// Variables
+$primaryFont: 'Source Sans Pro', sans-serif;
+$boldFont: 'Source Sans Pro', sans-serif;
+
+
+// Mixins
+@mixin buttonDefault {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+@mixin flexCenter($justify:center, $direction:row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+}

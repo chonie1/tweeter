@@ -4,21 +4,23 @@
  * Do not modify these two selectors, please
  */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 *, *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /*
  * Global layout stuff
  */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   word-wrap: break-word;
 }
 
@@ -26,9 +28,16 @@ body {
 * Additional CSS can be defined below or in other CSS files, as per instructions
 */
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem;
   background-color: #f4f1ec;
 }
@@ -44,25 +53,33 @@ main {
 }
 
 #scroll-up button {
+  border: none;
+  outline: none;
+  background-color: transparent;
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  outline: none;
-  border: none;
-  color:white;
+  color: white;
   background-color: #BD0000;
   font-size: 4rem;
 }
 
 #scroll-up button:hover {
-  background-color:red;
+  background-color: red;
 }
 
 /* Additional Classes */
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .left {
@@ -76,10 +93,13 @@ main {
 /* Styles for smaller screens */
 @media (max-width: 800px) {
   .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .left, .right {
     width: 100%;
   }
 }
+/*# sourceMappingURL=layout.css.map */

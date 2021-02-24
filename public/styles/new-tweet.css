@@ -1,6 +1,11 @@
 .new-tweet {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction:column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .new-tweet label {
@@ -8,32 +13,57 @@
 }
 
 .new-tweet textarea {
-  width: 100%;
-  background-color: transparent;
-  border: 0px solid black;
-  border-bottom: 3px solid black;
+  border: none;
   outline: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 3px solid black;
   margin-bottom: 1rem;
 }
 
 .new-tweet button {
-  background-color: #55acee;
   border: none;
+  outline: none;
+  background-color: transparent;
+  background-color: #55acee;
   font-family: 'Bungee', cursive, sans-serif;
   color: white;
-  outline: none;
 }
 
 .new-tweet output {
   font-family: 'Bungee', cursive, sans-serif;
 }
 
-.form-foot {
+.new-tweet .form-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   border: 0.5rem solid red;
   color: red;
@@ -41,8 +71,7 @@
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
-  display: flex;
-  justify-content: space-between;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 30px 0px 30px;
 }
+/*# sourceMappingURL=new-tweet.css.map */

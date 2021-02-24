@@ -1,0 +1,61 @@
+@import './variables';
+
+article {
+  border: 5px solid black;
+  margin: 3rem 0;
+  padding: 1.5rem;
+  width: 100%;
+
+  header {
+    @include flexCenter($justify:space-between);
+  }
+
+  main {
+    padding: 0;
+    width: 100%;
+  }
+
+  hr {
+    border: 1.5px solid black;
+    background-color: black;
+    width: 100%;
+  }
+
+  footer {
+    @include flexCenter($justify:space-between);
+    font-size: 1rem;
+  }
+  
+  .user {
+    @include flexCenter();
+    color: gray;
+  
+    img {
+      margin-right: 1rem;
+    }
+  }
+  
+  .username {
+    color: transparent;
+  }
+  
+  .icon {
+    margin: 0rem 0.5rem;
+    color:gray;
+  }
+
+  &:hover {
+    box-shadow: 10px 10px rgb(208,212,229);
+    font-weight: 600;
+  
+    .username {
+      color: rgb(208,212,229);
+    }
+  
+    .icon {
+      color: rgb(65,88,159);
+    }
+  }
+}
+
+

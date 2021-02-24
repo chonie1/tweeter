@@ -1,0 +1,22 @@
+@import './variables';
+
+.page-header {
+  @include flexCenter($direction:column);
+  height: 400px;
+  width: 400px;
+  margin: 7em auto 0em;
+  padding: 5em auto;
+  background-color: #ccd6dd;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+.page-header img {
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  .page-header {
+    width: 100%;
+    margin-top: 0rem;
+  }
+}

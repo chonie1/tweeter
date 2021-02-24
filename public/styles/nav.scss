@@ -1,0 +1,61 @@
+@import './variables';
+
+nav {
+  width: 100%;
+  background-color: #55acee;
+  color: #FFFFFF;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+
+  button {
+    @include buttonDefault();
+  }
+
+}
+
+/* Additional Classes */
+.nav-contents {
+  @include flexCenter($justify:space-between);
+}
+
+.logo {
+  font-family: 'Bungee', cursive, sans-serif;
+  font-size: 2em;
+}
+
+.write {
+  @include flexCenter($direction:column);
+  font-size: 1.25em;
+}
+
+.arrow {
+  color: #BF0000;
+  width: 100%;
+  text-align: center;
+  animation: MoveUpDown 2s linear infinite;
+  &:hover {
+    color:#ff0000;
+  }
+}
+
+/* Arrow animation */
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Styling for smaller screens */
+@media (max-width: 800px) {
+  nav {
+    padding: 1rem 0rem 1rem;
+
+  }
+  .nav-contents {
+    @include flexCenter($direction:column);
+  }
+}

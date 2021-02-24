@@ -3,21 +3,32 @@ nav {
   background-color: #55acee;
   color: #FFFFFF;
   padding: 1.5rem;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
 nav button {
-  background-color: inherit;
   border: none;
   outline: none;
+  background-color: transparent;
 }
-
 
 /* Additional Classes */
 .nav-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .logo {
@@ -26,9 +37,19 @@ nav button {
 }
 
 .write {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1.25em;
 }
 
@@ -36,34 +57,55 @@ nav button {
   color: #BF0000;
   width: 100%;
   text-align: center;
-  animation: MoveUpDown 2s linear infinite;
+  -webkit-animation: MoveUpDown 2s linear infinite;
+          animation: MoveUpDown 2s linear infinite;
+}
+
+.arrow:hover {
+  color: #ff0000;
 }
 
 /* Arrow animation */
-@keyframes MoveUpDown {
+@-webkit-keyframes MoveUpDown {
   0%, 100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
-
-/* Effects */
-.arrow:hover {
-  color:red;
+@keyframes MoveUpDown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
-
 
 /* Styling for smaller screens */
 @media (max-width: 800px) {
-  .nav-contents {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   nav {
     padding: 1rem 0rem 1rem;
   }
+  .nav-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
+/*# sourceMappingURL=nav.css.map */

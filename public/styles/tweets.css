@@ -6,9 +6,19 @@ article {
 }
 
 article header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 article main {
@@ -23,42 +33,63 @@ article hr {
 }
 
 article footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 1rem;
 }
 
-/* Additional Classes */
-.user {
+article .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: gray;
 }
 
-.user img {
+article .user img {
   margin-right: 1rem;
 }
 
-.username {
+article .username {
   color: transparent;
 }
 
-.icon {
+article .icon {
   margin: 0rem 0.5rem;
-  color:gray;
+  color: gray;
 }
 
-
-/* Effects */
 article:hover {
-  box-shadow: 10px 10px rgb(208,212,229);
+  -webkit-box-shadow: 10px 10px #d0d4e5;
+          box-shadow: 10px 10px #d0d4e5;
   font-weight: 600;
 }
 
 article:hover .username {
-  color: rgb(208,212,229);
+  color: #d0d4e5;
 }
 
 article:hover .icon {
-  color: rgb(65,88,159);
+  color: #41589f;
 }
+/*# sourceMappingURL=tweets.css.map */
