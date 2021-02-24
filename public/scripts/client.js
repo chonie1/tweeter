@@ -123,5 +123,11 @@ $(document).ready(function() {
       });
   });
 
+  // Toggle new tweet handler
+  $('#toggle-tweet').click(function(e) {
+    e.preventDefault();
+    $('#compose-tweet').slideToggle();
+  })
+
   loadTweets();
 });

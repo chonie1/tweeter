@@ -7,10 +7,12 @@ nav {
   top: 0;
 }
 
-nav a {
-  color: inherit; 
-  text-decoration: inherit; 
+nav button {
+  background-color: inherit;
+  border: none;
+  outline: none;
 }
+
 
 /* Additional Classes */
 .nav-contents {
@@ -31,7 +33,7 @@ nav a {
 }
 
 .arrow {
-  color: red;
+  color: #BF0000;
   width: 100%;
   text-align: center;
   animation: MoveUpDown 2s linear infinite;
@@ -45,6 +47,11 @@ nav a {
   50% {
     transform: translateY(10px);
   }
+}
+
+/* Effects */
+.arrow:hover {
+  color:red;
 }
 
 

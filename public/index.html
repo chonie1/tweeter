@@ -27,16 +27,16 @@
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
-  <body id="compose-tweet">
+  <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <div class="nav-contents">
         <div class="logo">tweeter</div>
         <div class="write">
-          <a href="#compose-tweet">
-            <div><strong>Write</strong> a new tweet</div>
-            <div class="fas fa-angle-double-down arrow"></div>
-          </a>
+          <div><strong>Write</strong> a new tweet</div>
+          <form id="toggle-tweet">
+            <button type="submit" value="Submit" class="fas fa-angle-double-down arrow"></button>
+          </form>
         </div>
       </div>
     </nav>
@@ -47,7 +47,6 @@
           <div>
             <img src="/images/profile-hex.png"/>
           </div>
-          <br />
           <div>
             <h2>Connie Ho</h2>
           </div>
@@ -58,15 +57,17 @@
           <!-- Section to compose tweets -->
           <section class="new-tweet">
             <div id="error">Sample Error Message</div>
-            <h2>Compose Tweet</h2>
-            <form id="new-tweet" action="/tweets" method="POST">
-              <label for="tweet-text">What are you humming about?</label>
-              <textarea name="text" id="tweet-text"></textarea>
-              <div class="form-foot">
-                <button type="submit">Tweet</button>
-                <output name="counter" class="counter" for="tweet-text">140</output>
-              </div>
-            </form>
+            <div id="compose-tweet">
+              <h2>Compose Tweet</h2>
+              <form id="new-tweet" action="/tweets" method="POST">
+                <label for="tweet-text">What are you humming about?</label>
+                <textarea name="text" id="tweet-text"></textarea>
+                <div class="form-foot">
+                  <button type="submit">Tweet</button>
+                  <output name="counter" class="counter" for="tweet-text">140</output>
+                </div>
+              </form>
+            </div>
           </section>
           <!-- Section For new-tweets -->
           <section id="tweets-container"></section>
