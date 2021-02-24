@@ -56,15 +56,8 @@ const createTweetElement = function(tweetData) {
 // takes return value and appends it to the tweets container
 const renderTweets = function(tweets) {
 
-  //clear any tweets first
-  $('#tweets-container').empty();
-
-  // sort by most recent
-  const sortedTweets = Object.values(tweets)
-    .sort((a, b) => (a.created_at < b.created_at) ? 1 : (a.created_at > b.created_at) ? -1 : 0);
-
-  for (const tweet of sortedTweets) {
-    $('#tweets-container').append(createTweetElement(tweet));
+  for (const tweet of Object.values(tweets)) {
+    $('#tweets-container').prepend(createTweetElement(tweet));
   }
   return;
 };
