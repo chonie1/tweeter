@@ -127,7 +127,7 @@ $(document).ready(function() {
   $('#toggle-tweet').click(function(e) {
     e.preventDefault();
     $('#compose-tweet').slideToggle();
-  })
+  });
 
   loadTweets();
 });

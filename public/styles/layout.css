@@ -33,20 +33,29 @@ main {
   background-color: #f4f1ec;
 }
 
-#scroll-up button {
-  outline: none;
-  border: none;
-  color:#BD0000;
-  background-color: none;
-  font-size: 4rem;
-  margin: 1.5rem;
-  position:fixed;
+#scroll-up {
+  background-color: transparent;
+  width: 5rem;
+  height: 5rem;
   bottom: 0;
   right: 0;
+  position: fixed;
+  margin: 1.5rem;
+}
+
+#scroll-up button {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color:white;
+  background-color: #BD0000;
+  font-size: 4rem;
 }
 
 #scroll-up button:hover {
-  color:red;
+  background-color:red;
 }
 
 /* Additional Classes */
