@@ -8,7 +8,8 @@ Tweeter is a simple, single-page AJAX-based Twitter clone that uses jQuery, HTML
 
 ## Features
 
-- New tweets show without refresh
+- Toggle compose tweets
+- Scroll up button
 - Character limits
 
 ## Getting Started
