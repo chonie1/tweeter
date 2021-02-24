@@ -3,38 +3,40 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-    
+
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css"s/>
+
     <!-- External Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"/>
+
     <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
-    
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css"/>
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
-  <body>
+  <body id="compose-tweet">
     <!-- Top nav bar (fixed) -->
     <nav>
       <div class="nav-contents">
         <div class="logo">tweeter</div>
         <div class="write">
-          <div><strong>Write</strong> a new tweet</div>
-          <div class="fas fa-angle-double-down arrow"></div>
+          <a href="#compose-tweet">
+            <div><strong>Write</strong> a new tweet</div>
+            <div class="fas fa-angle-double-down arrow"></div>
+          </a>
         </div>
       </div>
     </nav>
@@ -43,9 +45,9 @@
       <div class="left">
         <header class="page-header">
           <div>
-            <img src="/images/profile-hex.png"> 
+            <img src="/images/profile-hex.png"/>
           </div>
-          <br>
+          <br />
           <div>
             <h2>Connie Ho</h2>
           </div>
@@ -53,10 +55,9 @@
       </div>
       <div class="right">
         <main>
+          <!-- Section to compose tweets -->
           <section class="new-tweet">
-            <div id="error">
-              Sample Error Message
-            </div>
+            <div id="error">Sample Error Message</div>
             <h2>Compose Tweet</h2>
             <form id="new-tweet" action="/tweets" method="POST">
               <label for="tweet-text">What are you humming about?</label>
@@ -67,12 +68,10 @@
               </div>
             </form>
           </section>
-          <section id="tweets-container">
-          </section>
+          <!-- Section For new-tweets -->
+          <section id="tweets-container"></section>
         </main>
       </div>
     </div>
-
   </body>
-
 </html>

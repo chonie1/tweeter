@@ -5,7 +5,6 @@
  */
 html {
   box-sizing: border-box;
-  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -19,10 +18,8 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  width: 100%;
-  height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
-  overflow-y: hidden;
+  word-wrap: break-word;
 }
 
 /*
@@ -36,20 +33,20 @@ main {
   background-color: #f4f1ec;
 }
 
+
+/* Additional Classes */
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100%;
 }
 
 .left {
-  width: 100%;
+  width: 50%;
 }
 
 .right {
-  width: 100%;
-  overflow-y: auto;
+  width: 50%;
 }
 
 /* Styles for smaller screens */
@@ -58,5 +55,7 @@ main {
     flex-direction: column;
   }
 
-  
+  .left, .right {
+    width: 100%;
+  }
 }

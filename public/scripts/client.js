@@ -97,11 +97,13 @@ $(document).ready(function() {
     $('#error').slideUp();
     
     // validating form
-    const counter = Number($(this).find('.counter').val());
-
+    const counterElem = $(this).find('.counter');
+    const counter = Number(counterElem.val());
+   
     if (counter < 0) {
       $('#error').html('<span class="fas fa-exclamation-triangle"></span><span>Chill, this ain\'t yo diary</span><span class="fas fa-exclamation-triangle"></span>');
       $('#error').slideDown();
+      return;
     }
 
     if (counter === 140) {
@@ -118,11 +120,13 @@ $(document).ready(function() {
       data: inputs
     })
       .done(function(msg) {
+        $('#tweet-text').val('');
+        $(counterElem).val(140);
         loadTweets();
-        console.log(`Success! ${msg}`);
       })
       .fail(function(msg) {
-        console.log(`This failed: ${msg}`);
+        $('#error').html('<span class="fas fa-exclamation-triangle"></span><span>It\'s not you it\'s us. Try submitting again</span><span class="fas fa-exclamation-triangle"></span>');
+        $('#error').slideDown();
       });
   });
 

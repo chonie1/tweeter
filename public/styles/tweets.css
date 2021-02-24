@@ -11,8 +11,9 @@ article header {
   align-items: center;
 }
 
-.user img {
-  margin-right: 1rem;
+article main {
+  padding: 0;
+  width: 100%;
 }
 
 article hr {
@@ -21,21 +22,21 @@ article hr {
   width: 100%;
 }
 
-article main {
-  width: 100%;
-  margin: 2rem 0rem 0rem;
-}
-
 article footer {
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
 }
 
+/* Additional Classes */
 .user {
   display: flex;
   align-items: center;
   color: gray;
+}
+
+.user img {
+  margin-right: 1rem;
 }
 
 .username {
@@ -47,6 +48,8 @@ article footer {
   color:gray;
 }
 
+
+/* Effects */
 article:hover {
   box-shadow: 10px 10px rgb(208,212,229);
   font-weight: 600;
