@@ -34,6 +34,17 @@ nav a {
   color: red;
   width: 100%;
   text-align: center;
+  animation: MoveUpDown 2s linear infinite;
+}
+
+/* Arrow animation */
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 
