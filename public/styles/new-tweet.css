@@ -17,7 +17,8 @@
 }
 
 .new-tweet button {
-  background-color: #4056A1;
+  background-color: #55acee;
+  border: none;
   font-family: 'Bungee', cursive, sans-serif;
   color: white;
 }
