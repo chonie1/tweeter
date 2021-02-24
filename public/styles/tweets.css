@@ -80,13 +80,13 @@ article .icon {
 }
 
 article:hover {
-  -webkit-box-shadow: 10px 10px #d0d4e5;
-          box-shadow: 10px 10px #d0d4e5;
+  -webkit-box-shadow: 10px 10px #ccd6dd;
+          box-shadow: 10px 10px #ccd6dd;
   font-weight: 600;
 }
 
 article:hover .username {
-  color: #d0d4e5;
+  color: #ccd6dd;
 }
 
 article:hover .icon {

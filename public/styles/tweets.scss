@@ -45,11 +45,11 @@ article {
   }
 
   &:hover {
-    box-shadow: 10px 10px rgb(208,212,229);
+    box-shadow: 10px 10px $secondaryColor;
     font-weight: 600;
   
     .username {
-      color: rgb(208,212,229);
+      color: $secondaryColor;
     }
   
     .icon {

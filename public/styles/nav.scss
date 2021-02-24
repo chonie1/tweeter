@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-  font-family: 'Bungee', cursive, sans-serif;
+  font-family: $headerFont;
   font-size: 2em;
 }
 
@@ -30,12 +30,12 @@ nav {
 }
 
 .arrow {
-  color: #BF0000;
+  color: $buttonColor;
   width: 100%;
   text-align: center;
   animation: MoveUpDown 2s linear infinite;
   &:hover {
-    color:#ff0000;
+    color:$buttonHoverColor;
   }
 }
 

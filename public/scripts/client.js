@@ -77,14 +77,14 @@ const loadTweets = function() {
 };
 
 // Returns error message
-const createError = function(msg){
-  const errorHTML = 
+const createError = function(msg) {
+  const errorHTML =
     `<span class="fas fa-exclamation-triangle"></span>
     <span>${msg}</span>
     <span class="fas fa-exclamation-triangle"></span>`;
 
   return errorHTML;
-}
+};
 
 
 $(document).ready(function() {

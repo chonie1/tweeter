@@ -32,7 +32,7 @@ nav button {
 }
 
 .logo {
-  font-family: 'Bungee', cursive, sans-serif;
+  font-family: "Bungee", cursive, sans-serif;
   font-size: 2em;
 }
 
@@ -62,7 +62,7 @@ nav button {
 }
 
 .arrow:hover {
-  color: #ff0000;
+  color: red;
 }
 
 /* Arrow animation */

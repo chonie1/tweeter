@@ -17,13 +17,13 @@
 
   button {
     @include buttonDefault();
-    background-color: #55acee;
-    font-family: 'Bungee', cursive, sans-serif;
+    background-color: $primaryColor;
+    font-family: $boldFont;
     color: white;
   }
 
   output {
-    font-family: 'Bungee', cursive, sans-serif;
+    font-family: $boldFont;
   }
 
   .form-foot {
@@ -40,6 +40,6 @@
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $primaryFont;
   margin: 30px 0px 30px;
 }

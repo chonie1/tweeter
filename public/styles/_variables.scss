@@ -1,7 +1,13 @@
 // Variables
 $primaryFont: 'Source Sans Pro', sans-serif;
-$boldFont: 'Source Sans Pro', sans-serif;
+$headerFont: 'Bungee', cursive, sans-serif;
 
+$primaryColor: #55acee;
+$secondaryColor: #ccd6dd;
+$primaryFontColor: #545149;
+$bodyColor: #f4f1ec;
+$buttonColor: #BF0000;
+$buttonHoverColor: red;
 
 // Mixins
 @mixin buttonDefault {

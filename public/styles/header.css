@@ -12,9 +12,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: fixed;
+  top: 20%;
   height: 400px;
   width: 400px;
-  margin: 7em auto 0em;
   padding: 5em auto;
   background-color: #ccd6dd;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
@@ -26,6 +27,7 @@
 
 @media (max-width: 800px) {
   .page-header {
+    position: static;
     width: 100%;
     margin-top: 0rem;
   }

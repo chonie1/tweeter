@@ -26,12 +26,12 @@
   outline: none;
   background-color: transparent;
   background-color: #55acee;
-  font-family: 'Bungee', cursive, sans-serif;
+  font-family: "Bungee", cursive, sans-serif;
   color: white;
 }
 
 .new-tweet output {
-  font-family: 'Bungee', cursive, sans-serif;
+  font-family: "Bungee", cursive, sans-serif;
 }
 
 .new-tweet .form-foot {
@@ -71,7 +71,7 @@
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 30px 0px 30px;
 }
 /*# sourceMappingURL=new-tweet.css.map */
