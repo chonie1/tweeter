@@ -1,12 +1,23 @@
 .page-header {
   height: 400px;
-  width: 100%;
   display: flex;
+  margin: 10rem 10rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgba(215,151,49,1);
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.page-header img {
+  margin-top: 2rem;
+}
+
+
+@media (min-width: 400px) {
+  .page-header {
+    padding: 2rem;
+  }  
 }
 
