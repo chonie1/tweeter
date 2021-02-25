@@ -4,92 +4,54 @@ article {
   padding: 1.5rem;
   width: 100%;
 }
-
 article header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
-
 article main {
   padding: 0;
   width: 100%;
 }
-
 article hr {
   border: 1.5px solid black;
   background-color: black;
   width: 100%;
 }
-
 article footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   font-size: 1rem;
 }
-
 article .user {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   color: gray;
 }
-
 article .user img {
   margin-right: 1rem;
 }
-
 article .username {
   color: transparent;
 }
-
 article .icon {
   margin: 0rem 0.5rem;
   color: gray;
 }
-
 article:hover {
-  -webkit-box-shadow: 10px 10px #ccd6dd;
-          box-shadow: 10px 10px #ccd6dd;
+  box-shadow: 10px 10px #ccd6dd;
   font-weight: 600;
 }
-
 article:hover .username {
   color: #ccd6dd;
 }
-
 article:hover .icon {
   color: #41589f;
 }
+
 /*# sourceMappingURL=tweets.css.map */

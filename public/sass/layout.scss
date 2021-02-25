@@ -67,11 +67,12 @@ main {
 .left {
   @include flexCenter();
   align-items: flex-start;
-  width: 50%;
+  width: 40%;
 }
 
 .right {
-  width: 50%;
+  margin: 0 auto;
+  width: 60%;
 }
 
 /* Styles for smaller screens */

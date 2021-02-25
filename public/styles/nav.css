@@ -3,11 +3,9 @@ nav {
   background-color: #55acee;
   color: #FFFFFF;
   padding: 1.5rem;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
-
 nav button {
   border: none;
   outline: none;
@@ -16,19 +14,10 @@ nav button {
 
 /* Additional Classes */
 .nav-contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
 .logo {
@@ -37,19 +26,10 @@ nav button {
 }
 
 .write {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: 1.25em;
 }
 
@@ -57,55 +37,33 @@ nav button {
   color: #BF0000;
   width: 100%;
   text-align: center;
-  -webkit-animation: MoveUpDown 2s linear infinite;
-          animation: MoveUpDown 2s linear infinite;
+  animation: MoveUpDown 2s linear infinite;
 }
-
 .arrow:hover {
   color: red;
 }
 
 /* Arrow animation */
-@-webkit-keyframes MoveUpDown {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
 @keyframes MoveUpDown {
   0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 }
-
 /* Styling for smaller screens */
 @media (max-width: 800px) {
   nav {
     padding: 1rem 0rem 1rem;
   }
+
   .nav-contents {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
+
 /*# sourceMappingURL=nav.css.map */

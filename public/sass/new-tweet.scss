@@ -18,12 +18,12 @@
   button {
     @include buttonDefault();
     background-color: $primaryColor;
-    font-family: $boldFont;
+    font-family: $headerFont;
     color: white;
   }
 
   output {
-    font-family: $boldFont;
+    font-family: $headerFont;
   }
 
   .form-foot {
